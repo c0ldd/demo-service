@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password: password
+  aop:
+    auto: 'true'
+    proxy-target-class: 'false'
+  application:
+    name: demo-service
+# Framework config
+context:
+  initializer:
+    classes: com.example.aop.demo_service.AppInitializer
+
